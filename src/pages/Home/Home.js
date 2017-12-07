@@ -1,7 +1,9 @@
 import React from 'react';  
 import './Home.css';
+import Header from '../Header/Header';
+import Content from '../Content/Content';
 
-import { Button, Modal } from 'semantic-ui-react'
+import { Button, Modal ,Menu,Icon,Sidebar} from 'semantic-ui-react'
 
 
 
@@ -10,22 +12,42 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div> <a href ="/Login"><button class="ui button" role="button">Login</button></a>
-      <div> <a href ="/Profile"><button class="ui button" role="button">Profile</button></a>
+      <div> 
+  < Header/>
+  < Content/>
+  
+
+        <a href ="/Login"><button class="ui button" role="button">Login</button></a>
+       <a href ="/Profile"><button class="ui button" role="button">Profile</button></a>
       <br></br>
-      <div class="ui icon input">
-  <input type="text" placeholder="Search..." />
-  <i aria-hidden="true" class="search icon"></i>
-</div>
-<div>
-  <i class="huge icons">
-<i aria-hidden="true" class="red dont big icon"></i>
-  <i aria-hidden="true" class="black user icon"></i></i>
-</div>
+      <i class="huge icons">
+      <i aria-hidden="true" class="book icon"></i>
+      <i aria-hidden="true" class="book icon"></i></i>
+
+      <i class="huge icons">
+<i aria-hidden="true" class="computer icon"></i>
+<i aria-hidden="true" class="computer icon"></i></i>
+
+<i class="huge icons">
+<i aria-hidden="true" class="camera icon"></i>
+<i aria-hidden="true" class="camera icon"></i></i>
+
+<br></br>
+      <i class="huge icons">
+      <i aria-hidden="true" class="thin circle big icon"></i>
+      <i aria-hidden="true" class="user icon"></i></i>
+
+      <i class="huge icons">
+<i aria-hidden="true" class="thin circle big icon"></i>
+<i aria-hidden="true" class="user icon"></i></i>
+
+<i class="huge icons">
+<i aria-hidden="true" class="thin circle big icon"></i>
+<i aria-hidden="true" class="user icon"></i></i>
 
 
       </div>
-      </div>
+      
 
     );
   }

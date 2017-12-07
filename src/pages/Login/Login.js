@@ -29,6 +29,8 @@ class Login extends React.Component {
 
   render() {
     return (
+      <div>
+         <div><a href ="/Register"><button class="ui button" role="button">Register</button></a>
       <div 
         className='ui middle aligned center aligned grid' 
         style={{ padding: '50px 0 0 50px', width: '500px' }}>
@@ -66,13 +68,15 @@ class Login extends React.Component {
                   <button type='submit' className='ui teal fluid button'>
                     Log in
                   </button>
+                  
                 </div>
               </div>
             </div>
           </form>
         </div>
       </div>
-
+      </div>
+      </div>
     );
   }
 }

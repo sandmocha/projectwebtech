@@ -6,6 +6,7 @@ import Main from './pages/Main'
 import Home from './pages/Home/Home'
 import Profile from './pages/Profile/Profile'
 import Upload from './pages/Upload/Upload'
+import Register from './pages/Register/Register'
 const Routes = () => {
     return (
     <Switch>
@@ -13,6 +14,7 @@ const Routes = () => {
     <Route exact path="/Login" component={Login} />
     <Route exact path="/Profile" component={Profile} />
     <Route exact path="/Upload" component={Upload} />
+    <Route exact path="/Register" component={Register} />
     {!localStorage.getItem('username') ? (
       <Redirect to="/Login" />
     ) : (
